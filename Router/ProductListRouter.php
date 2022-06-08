@@ -1,9 +1,9 @@
 
 <?php
 
-use App\Controllers\RankingController;
+use App\Controllers\ProductListController;
 
-$rankingController = new RankingController();
+$productListController = new ProductListController();
 // -------------
 // Header
 // -------------
@@ -23,7 +23,7 @@ echo '  <div class="container">';
 // Home content
 // -------------
 
-$rankingController->index();
+$productListController->index();
 echo '</div>';
 echo   "</body>";
 // -------------

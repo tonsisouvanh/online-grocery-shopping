@@ -17,8 +17,8 @@ switch ($action) {
     case 'home':
         require_once "./Router/HomeRouter.php";
         break;
-    case 'ranking':
-        require_once "./Router/RankingRouter.php";
+    case 'product-list':
+        require_once "./Router/ProductListRouter.php";
         break;
     case 'user-login':
         require_once "./Router/User/UserLoginRouter.php";

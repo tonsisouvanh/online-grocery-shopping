@@ -15,7 +15,7 @@ echo "<body class='body'>";
 // * Navigation Bar
 // -------------
 
-require_once "./App/Views/Partials/NavigationBar/NavigationBar.php";
+require_once "./App/Views/Partials/Navbar/Navbar.php";
 
 echo ' <div class="container">';
 // -------------

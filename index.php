@@ -94,21 +94,25 @@ if (isset($_SERVER['REQUEST_URI'])) {
     // route admin
     // ------------------
     require_once "./Action/AdminAction.php";
+
   } else if (str_contains($reqURI, "/online-grocery-shopping")) {
     // ------------------
     // route home
     // ------------------
     require_once "./Action/HomeAction.php";
+
   } else if ($reqURI == '/') {
     // ------------------
     // route home
     // ------------------
     require_once "./Action/FowardSlashHomeAction.php";
+
   } else if (str_contains($reqURI, "/test")) {
     // ------------------
     // route test
     // ------------------
     require_once "./Action/TestAction.php";
+
   } else {
     // ------------------
     // catching  error

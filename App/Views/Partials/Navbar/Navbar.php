@@ -47,7 +47,6 @@
 
 <!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark navbar-bg-color">
-
     <div class="container-fluid">
 
         <a class="navbar-brand logo" <?php echo "href='$PATH_ROOT?action=home'" ?>>Grocery <i style="font-size: 2rem;" class="fa-brands fa-opencart"></i>Shop</a>
@@ -66,7 +65,7 @@
                 </li>
 
                 <li>
-                    <a class="nav-link link" <?php echo "href='$PATH_ROOT?action=ranking'"; ?>> <i class="fas fa-utensils"></i> Sản phẩm</a>
+                    <a class="nav-link link" <?php echo "href='$PATH_ROOT?action=product-list'"; ?>> <i class="fas fa-utensils"></i> Tất cả sản phẩm</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -74,12 +73,13 @@
                     <i class="fas fa-bars"></i> Danh mục sản phẩm
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Rau củ</a></li>
+                        <li><a class="dropdown-item" href="#">Nước ngọt</a></li>
                         <!-- <li>
                             <hr class="dropdown-divider">
                         </li> -->
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Bánh Snack</a></li>
+                        <li><a class="dropdown-item" href="#">Bánh mì</a></li>
                     </ul>
                 </li>
                 <!-- <li class="nav-item">
@@ -91,9 +91,9 @@
                 <button class="btn btn-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
             <div class="d-flex navbar-right">
-                <a class="nav-link link login-link" <?php echo "href='$PATH_ROOT?action=user-login'" ?>>Đăng nhập</a>
-                <a class="nav-link link register-link" <?php echo "href='$PATH_ROOT?action=user-register'" ?>>Đăng ky</a>
-                <a class="nav-link link merchant-link" <?php echo "href='$PATH_ROOT?action=user-login'" ?>>Trở thành người bán</a>
+                <a class="nav-link link login-link" <?php echo "href='$PATH_ROOT?action=customer-login'" ?>>Đăng nhập</a>
+                <a class="nav-link link register-link" <?php echo "href='$PATH_ROOT?action=customer-register'" ?>>Đăng ky</a>
+                <a class="nav-link link merchant-link" <?php echo "href='$PATH_ROOT?action=user-login'" ?>>Trở thành người bán?</a>
             </div>
         </div>
 

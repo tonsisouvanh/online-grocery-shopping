@@ -54,6 +54,38 @@ $PATH_ROOT = $GLOBALS['PATH_ROOT'];
 
         </div>
     </div>
+    <!-- NEWS ITEMS -->
+    <div class="popular-items">
+        <h2 class="popular-items-title">SẢN PHẨM MỚI</h2>
+        <div class="popular-items-container">
+            <?php
+            for ($i = 1; $i < 15; $i++) {
+                echo '
+            <div class="popularItem-wrapper">
+                <img src="https://media.istockphoto.com/photos/orange-picture-id185284489?k=20&m=185284489&s=612x612&w=0&h=LLY2os0YTG2uAzpBKpQZOAC4DGiXBt1jJrltErTJTKI=" class="popularItem-img"></img>
+                <div class="popularItem-title">Trái cam ngọtTrái cam ngọt</div>
+            </div>';
+            }
+            ?>
+
+        </div>
+    </div>
+    <!-- PROMOTION ITEMS -->
+    <div class="popular-items">
+        <h2 class="popular-items-title promoItem-title">SẢN PHẨM KHUYẾN MÃI</h2>
+        <div class="popular-items-container">
+            <?php
+            for ($i = 1; $i < 15; $i++) {
+                echo '
+            <div class="popularItem-wrapper">
+                <img src="https://media.istockphoto.com/photos/orange-picture-id185284489?k=20&m=185284489&s=612x612&w=0&h=LLY2os0YTG2uAzpBKpQZOAC4DGiXBt1jJrltErTJTKI=" class="popularItem-img"></img>
+                <div class="popularItem-title">Trái cam ngọtTrái cam ngọt</div>
+            </div>';
+            }
+            ?>
+
+        </div>
+    </div>
 </div>
 
 
