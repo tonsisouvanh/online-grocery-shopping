@@ -1,9 +1,9 @@
 
 <?php
 
-use App\Controllers\ProductListController;
+use App\Controllers\ProductController;
 
-$productListController = new ProductListController();
+$productController = new ProductController();
 // -------------
 // Header
 // -------------
@@ -23,7 +23,7 @@ echo '  <div class="container">';
 // Home content
 // -------------
 
-$productListController->index();
+$productController->index();
 echo '</div>';
 echo   "</body>";
 // -------------

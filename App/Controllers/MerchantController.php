@@ -3,10 +3,10 @@
 
 namespace App\Controllers;
 
-use App\Models\CustomerModel;
+// use App\Models\MerchantModel;
 use App\Views\View;
 
-class CustomerController
+class MerchantController
 {
 
 
@@ -16,43 +16,48 @@ class CustomerController
 
   public function index()
   {
+    echo 'index';
+  }
+
+  public function renderLoginPage()
+  {
     // console_log($_SERVER);
     $data = [1, 2];
-    $view_path = "./App/Views/Customer/Login/Login.php";
+    $view_path = "./App/Views/Merchant/Login/Login.php";
     $login_view = new View();
 
 
     return $login_view->render($view_path, $data);
   }
 
-  public function renderViewAllUser()
-  {
-    $userModel = new CustomerModel();
+  // public function renderViewAllUser()
+  // {
+  //   $userModel = new CustomerModel();
 
-    $users = $userModel->getAllUser();
-
-
-
-
-    $view_path = "./App/Views/User/AllUser.php";
-    $viewUser = new View();
-    $viewUser->render($view_path, $users);
-    return;
-  }
-
-  public function GetAllUserPage()
-  {
-    $userModel = new CustomerModel();
-
-    $users = $userModel->getAllUser();
+  //   $users = $userModel->getAllUser();
 
 
 
 
-    $view_path = "./App/Views/User/AllUser.php";
-    $viewUser = new View();
-    return $viewUser->render($view_path, $users);
-  }
+  //   $view_path = "./App/Views/User/AllUser.php";
+  //   $viewUser = new View();
+  //   $viewUser->render($view_path, $users);
+  //   return;
+  // }
+
+  // public function GetAllUserPage()
+  // {
+  //   $userModel = new CustomerModel();
+
+  //   $users = $userModel->getAllUser();
+
+
+
+
+  //   $view_path = "./App/Views/User/AllUser.php";
+  //   $viewUser = new View();
+  //   return $viewUser->render($view_path, $users);
+  // }
 
 
   public function LoginHandle()
@@ -64,21 +69,10 @@ class CustomerController
     $data = [1, 2];
     $login_view = new View();
 
-    $view_path = "./App/Views/Customer/Register/Register.php";
+    $view_path = "./App/Views/Merchant/Register/Register.php";
 
     return $login_view->render($view_path, $data);
   }
-
-  public function renderCheckoutPage()
-  {
-    $data = [1, 2];
-    $checkout_view = new View();
-
-    $view_path = "./App/Views/Customer/Checkout/Checkout.php";
-
-    return $checkout_view->render($view_path, $data);
-  }
-
   public function UploadQuestionHandle()
   {
     $data = [1, 2];

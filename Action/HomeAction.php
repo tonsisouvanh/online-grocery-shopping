@@ -26,9 +26,12 @@ switch ($action) {
         break;
 
     case 'product-list':
-        require_once "./Router/ProductListRouter.php";
+        require_once "./Router/Product/ProductListRouter.php";
         break;
-
+    case 'product-detail':
+        require_once "./Router/Product/ProductDetailRouter.php";
+        break;
+        // * CUSTOMER
     case 'customer-login':
         require_once "./Router/Customer/CustomerLoginRouter.php";
         break;
@@ -36,14 +39,33 @@ switch ($action) {
     case 'customer-register':
         require_once "./Router/Customer/CustomerRegisterRouter.php";
         break;
+        // * MERCHANT
+    case 'customer-login':
+        require_once "./Router/Customer/CustomerLoginRouter.php";
+        break;
+
+    case 'customer-register':
+        require_once "./Router/Customer/CustomerRegisterRouter.php";
+        break;
+    case 'merchant-login':
+        require_once "./Router/Merchant/MerchantLoginRouter.php";
+        break;
+
+    case 'merchant-register':
+        require_once "./Router/Merchant/MerchantRegisterRouter.php";
+        break;
 
         // case 'admin':
         //     require_once "./Router/Admin/AdminPageRouter.php";
         //     break;
 
-        // case 'user-upload-question':
-        //     require_once "./Router/User/UserUploadQuestion.php";
-        //     break;
+    case 'customer-cart':
+        require_once "./Router/Cart/CartRouter.php";
+        break;
+    case 'customer-checkout':
+        console_log('asdhfkjh');
+        require_once "./Router/Checkout/CheckoutRouter.php";
+        break;
 
         // case 'edit-profile':
         //     require_once "./Router/User/EditProfile.php";

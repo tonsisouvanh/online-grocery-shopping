@@ -35,11 +35,12 @@ $PATH_ROOT = $GLOBALS['PATH_ROOT'];
       </img>
       <!-- </div> -->
       <p class="product-title">
-        Bìa SÀI GÒN LAGER
+        Bìa SÀI GÒN LAGER Bìa SÀI GÒN Bìa SÀI GÒN LAGER
       </p>
       <div class="product-price">
         12000 vnđ
       </div>
+      <a href="#">Xem san pham</a>
       <button class="product-addToCart-btn">
         CHỌN MUA
       </button>
@@ -50,11 +51,12 @@ $PATH_ROOT = $GLOBALS['PATH_ROOT'];
       </img>
       <!-- </div> -->
       <p class="product-title">
-        Bìa SÀI GÒN LAGER
+        Bìa SÀI GÒN LAGER Bìa SÀI GÒN Bìa SÀI GÒN LAGER
       </p>
       <div class="product-price">
         12000 vnđ
       </div>
+      <a href="#">Xem san pham</a>
       <button class="product-addToCart-btn">
         CHỌN MUA
       </button>
@@ -70,6 +72,7 @@ $PATH_ROOT = $GLOBALS['PATH_ROOT'];
       <div class="product-price">
         12000 vnđ
       </div>
+      <a href="#">Xem san pham</a>
       <button class="product-addToCart-btn">
         CHỌN MUA
       </button>
@@ -85,6 +88,7 @@ $PATH_ROOT = $GLOBALS['PATH_ROOT'];
       <div class="product-price">
         12000 vnđ
       </div>
+      <a href="#">Xem san pham</a>
       <button class="product-addToCart-btn">
         CHỌN MUA
       </button>
@@ -100,6 +104,7 @@ $PATH_ROOT = $GLOBALS['PATH_ROOT'];
       <div class="product-price">
         12000 vnđ
       </div>
+      <a href="#">Xem san pham</a>
       <button class="product-addToCart-btn">
         CHỌN MUA
       </button>
@@ -115,6 +120,7 @@ $PATH_ROOT = $GLOBALS['PATH_ROOT'];
       <div class="product-price">
         12000 vnđ
       </div>
+      <a href="#">Xem san pham</a>
       <button class="product-addToCart-btn">
         CHỌN MUA
       </button>
@@ -130,6 +136,7 @@ $PATH_ROOT = $GLOBALS['PATH_ROOT'];
       <div class="product-price">
         12000 vnđ
       </div>
+      <a href="#">Xem san pham</a>
       <button class="product-addToCart-btn">
         CHỌN MUA
       </button>

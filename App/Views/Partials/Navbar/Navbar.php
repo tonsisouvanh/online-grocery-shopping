@@ -70,7 +70,7 @@
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fas fa-bars"></i> Danh mục sản phẩm
+                        <i class="fas fa-bars"></i> Danh mục sản phẩm
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#">Rau củ</a></li>
@@ -90,9 +90,11 @@
                 <input class="form-control me-2" type="search" placeholder="Bạn tìm gì?" aria-label="Search">
                 <button class="btn btn-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
-            <div class="d-flex navbar-right">
+            <div class="d-flex align-items-center navbar-right">
                 <a class="nav-link link login-link" <?php echo "href='$PATH_ROOT?action=customer-login'" ?>>Đăng nhập</a>
                 <a class="nav-link link register-link" <?php echo "href='$PATH_ROOT?action=customer-register'" ?>>Đăng ky</a>
+                <a class="nav-link link nav-link-cart" <?php echo "href='$PATH_ROOT?action=customer-cart'" ?>><i class="fa-solid fa-cart-shopping"></i><span>Giỏ hàng</span>
+                </a>
                 <a class="nav-link link merchant-link" <?php echo "href='$PATH_ROOT?action=user-login'" ?>>Trở thành người bán?</a>
             </div>
         </div>

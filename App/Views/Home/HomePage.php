@@ -1,6 +1,58 @@
 <?php
 
 $PATH_ROOT = $GLOBALS['PATH_ROOT'];
+// $popItems = Array(
+//     "src" => "https://media.istockphoto.com/photos/orange-picture-id185284489?k=20&m=185284489&s=612x612&w=0&h=LLY2os0YTG2uAzpBKpQZOAC4DGiXBt1jJrltErTJTKI=",
+//     "title" => "Trái cam tuoi ngọt"
+// )
+
+$popItems = array(
+    array(
+        "src" => "https://media.istockphoto.com/photos/orange-picture-id185284489?k=20&m=185284489&s=612x612&w=0&h=LLY2os0YTG2uAzpBKpQZOAC4DGiXBt1jJrltErTJTKI=",
+        "title" => "Trái cam tuoi ngọt"
+    ),
+    array(
+        "src" => "https://cdn.tgdd.vn/Products/Images/7460/269315/bhx/loc-5-tang-1-banh-flan-anh-hong-hu-lon-100g-202205161024067635_300x300.png",
+        "title" => "Banh Flan sua chua"
+    ),
+    array(
+        "src" => "https://cdn.tgdd.vn/Products/Images/2945/200666/bhx/thung-24-lon-sua-lua-mach-milo-active-go-240ml-202205161554273744_300x300.jpg",
+        "title" => "Milo thung 24 lon"
+    ),
+    array(
+        "src" => "https://cdn.tgdd.vn/Products/Images/2563/203722/bhx/6-lon-nuoc-uong-vi-trai-cay-co-ga-la-vie-sparkling-huong-chanh-bac-ha-330ml-202205240957286387_300x300.jpeg",
+        "title" => "Lemon drik freshy"
+    ),
+    array(
+        "src" => "https://cdn.tgdd.vn/Products/Images/8139/266390/bhx/bap-bo-uc-tuoi-trung-dong-hut-chan-khong-khay-250g-202205161629478106_300x300.jpg",
+        "title" => "thit heo tuoi ngon"
+    ),
+    array(
+        "src" => "https://cdn.tgdd.vn/Products/Images/2563/203722/bhx/6-lon-nuoc-uong-vi-trai-cay-co-ga-la-vie-sparkling-huong-chanh-bac-ha-330ml-202205240957286387_300x300.jpeg",
+        "title" => "Lemon drik freshy"
+    ),
+    array(
+        "src" => "https://cdn.tgdd.vn/Products/Images/2563/203722/bhx/6-lon-nuoc-uong-vi-trai-cay-co-ga-la-vie-sparkling-huong-chanh-bac-ha-330ml-202205240957286387_300x300.jpeg",
+        "title" => "Lemon drik freshy"
+    ),
+    array(
+        "src" => "https://cdn.tgdd.vn/Products/Images/2563/203722/bhx/6-lon-nuoc-uong-vi-trai-cay-co-ga-la-vie-sparkling-huong-chanh-bac-ha-330ml-202205240957286387_300x300.jpeg",
+        "title" => "Lemon drik freshy"
+    ),
+    array(
+        "src" => "https://cdn.tgdd.vn/Products/Images/2563/203722/bhx/6-lon-nuoc-uong-vi-trai-cay-co-ga-la-vie-sparkling-huong-chanh-bac-ha-330ml-202205240957286387_300x300.jpeg",
+        "title" => "Lemon drik freshy"
+    ),
+    array(
+        "src" => "https://cdn.tgdd.vn/Products/Images/2563/203722/bhx/6-lon-nuoc-uong-vi-trai-cay-co-ga-la-vie-sparkling-huong-chanh-bac-ha-330ml-202205240957286387_300x300.jpeg",
+        "title" => "Lemon drik freshy"
+    ),
+    array(
+        "src" => "https://cdn.tgdd.vn/Products/Images/2563/203722/bhx/6-lon-nuoc-uong-vi-trai-cay-co-ga-la-vie-sparkling-huong-chanh-bac-ha-330ml-202205240957286387_300x300.jpeg",
+        "title" => "Lemon drik freshy"
+    )
+);
+
 ?>
 <style>
     /* .home{
@@ -38,52 +90,40 @@ $PATH_ROOT = $GLOBALS['PATH_ROOT'];
         </button>
     </div>
 
-    <!-- PROPULAR ITEMS -->
+    <!-- NEWS ITEMS -->
     <div class="popular-items">
-        <h2 class="popular-items-title">SẢN PHẨM ĐƯỢC QUAN TÂM NHIỀU</h2>
+        <h2 class="popular-items-title">SẢN PHẨM MỚI</h2>
         <div class="popular-items-container">
-            <?php
-            for ($i = 1; $i < 15; $i++) {
-                echo '
-            <div class="popularItem-wrapper">
-                <img src="https://media.istockphoto.com/photos/orange-picture-id185284489?k=20&m=185284489&s=612x612&w=0&h=LLY2os0YTG2uAzpBKpQZOAC4DGiXBt1jJrltErTJTKI=" class="popularItem-img"></img>
-                <div class="popularItem-title">Trái cam ngọtTrái cam ngọt</div>
-            </div>';
-            }
-            ?>
-
+            <?php foreach ($popItems as $item) : ?>
+                <div class="popularItem-wrapper">
+                    <img src="<?= $item['src'] ?>" class="popularItem-img"></img>
+                    <div class="popularItem-title"><?= $item['title'] ?></div>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
     <!-- NEWS ITEMS -->
     <div class="popular-items">
         <h2 class="popular-items-title">SẢN PHẨM MỚI</h2>
         <div class="popular-items-container">
-            <?php
-            for ($i = 1; $i < 15; $i++) {
-                echo '
-            <div class="popularItem-wrapper">
-                <img src="https://media.istockphoto.com/photos/orange-picture-id185284489?k=20&m=185284489&s=612x612&w=0&h=LLY2os0YTG2uAzpBKpQZOAC4DGiXBt1jJrltErTJTKI=" class="popularItem-img"></img>
-                <div class="popularItem-title">Trái cam ngọtTrái cam ngọt</div>
-            </div>';
-            }
-            ?>
-
+            <?php foreach ($popItems as $item) : ?>
+                <div class="popularItem-wrapper">
+                    <img src="<?= $item['src'] ?>" class="popularItem-img"></img>
+                    <div class="popularItem-title"><?= $item['title'] ?></div>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
     <!-- PROMOTION ITEMS -->
     <div class="popular-items">
         <h2 class="popular-items-title promoItem-title">SẢN PHẨM KHUYẾN MÃI</h2>
         <div class="popular-items-container">
-            <?php
-            for ($i = 1; $i < 15; $i++) {
-                echo '
-            <div class="popularItem-wrapper">
-                <img src="https://media.istockphoto.com/photos/orange-picture-id185284489?k=20&m=185284489&s=612x612&w=0&h=LLY2os0YTG2uAzpBKpQZOAC4DGiXBt1jJrltErTJTKI=" class="popularItem-img"></img>
-                <div class="popularItem-title">Trái cam ngọtTrái cam ngọt</div>
-            </div>';
-            }
-            ?>
-
+            <?php foreach ($popItems as $item) : ?>
+                <div class="popularItem-wrapper">
+                    <img src="<?= $item['src'] ?>" class="popularItem-img"></img>
+                    <div class="popularItem-title"><?= $item['title'] ?></div>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </div>

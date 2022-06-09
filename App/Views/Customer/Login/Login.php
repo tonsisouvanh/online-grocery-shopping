@@ -72,8 +72,6 @@ session_start();
             <div class="d-flex my-3 justify-content-end">
               <button class="btn mx-2" type="submit">Đăng nhập</button>
               <a class="btn ml-3" <?php echo "href='$PATH_ROOT?action=home'"; ?>>Trang chủ </a>
-
-
             </div>
           </form>
         </div>

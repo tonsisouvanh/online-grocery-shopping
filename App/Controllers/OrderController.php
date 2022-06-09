@@ -6,23 +6,21 @@ use App\Views\View;
 
 use function PHPSTORM_META\map;
 
-class ProductListController
+class ProductController
 {
     public function index()
     {
         $data = '';
-        $view_productList = new View();
+        $view_orders = new View();
 
 
 
 
-        $view_path = "./App/Views/Products/ProductListPage.php";
+        $view_path = "./App/Views/Order/Order.php";
 
-        $view_productList->render($view_path, $data);
+        $view_orders->render($view_path, $data);
         return;
     }
-
-
 
 
     public function abc()
