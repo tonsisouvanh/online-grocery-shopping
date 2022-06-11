@@ -1,4 +1,5 @@
-<?php
+<!-- * Check if user logged in -->
+<!-- <?php
 
 
 session_start();
@@ -25,18 +26,15 @@ if (isset($_SESSION['user_name'])) {
 }
 console_log($curr_user . ' is loged-in in system');
 console_log('User type is: ' . $curr_user_type);
-
-
-
-?>
+?> -->
 
 
 
 <?php
 
-use App\Controllers\AdminController;
+use App\Controllers\MerchantController;
 
-$adController = new AdminController();
+$merchantController = new MerchantController();
 
 
 echo "<html lang='en'>";
@@ -44,7 +42,7 @@ echo "<html lang='en'>";
 // Header
 // -------------
 
-require_once "./App/Views/Admin/partials/Header.php";
+require_once "./App/Views/Merchant/partials/Header.php";
 
 
 echo '<body>';
@@ -55,7 +53,7 @@ echo '<div class="q2a-wrapper">';
 // side bar
 // -------------
 
-include_once "./App/Views/Admin/partials/Sidebar.php";
+include_once "./App/Views/Merchant/partials/Sidebar.php";
 
 
 // -------------
@@ -66,30 +64,30 @@ echo '<div class="q2a-content">';
 // -------------
 // Nav 
 // -------------
-include_once "./App/Views/Admin/partials/Navbar.php";
+include_once "./App/Views/Merchant/partials/Navbar.php";
 
 echo '<div class="q2a-content-content">';
 
 // -----------------------
 // Content right there
 // -----------------------
-$adController->ManageAnswerDetail();
-
-
-
-echo '</div>';
+$merchantController->ManageProduct();
 
 
 echo '</div>';
 
 
 echo '</div>';
+
+
+echo '</div>';
+
 echo '</body>';
 
 // -------------
 // Footer
 // -------------
 
-require_once "./App/Views/Admin/partials/Footer.php";
+require_once "./App/Views/Merchant/partials/Footer.php";
 
 echo "</html>";

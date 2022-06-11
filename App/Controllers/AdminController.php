@@ -20,20 +20,20 @@ class AdminController
         $view_path = "./App/Views/Admin/AdminPage/AdminPage.php";
 
 
-        if (isset($_REQUEST['typeManage'])) {
-            $typeManage = $_REQUEST['typeManage'];
+        // if (isset($_REQUEST['typeManage'])) {
+        //     $typeManage = $_REQUEST['typeManage'];
 
-            switch ($typeManage) {
-                case   'question-cate':
-                    return $this->ManageQuestionCategory();
-                    break;
+        //     switch ($typeManage) {
+        //         case   'question-cate':
+        //             return $this->ManageQuestionCategory();
+        //             break;
 
 
-                default:
-                    # code...
-                    break;
-            }
-        }
+        //         default:
+        //             # code...
+        //             break;
+        //     }
+        // }
 
         return $view_admin->render($view_path, $data);
     }

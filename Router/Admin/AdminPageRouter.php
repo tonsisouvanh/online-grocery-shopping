@@ -1,4 +1,5 @@
-<?php
+<!-- * Check if user logged in -->
+<!-- <?php
 
 
 session_start();
@@ -25,10 +26,7 @@ if (isset($_SESSION['user_name'])) {
 }
 console_log($curr_user . ' is loged-in in system');
 console_log('User type is: ' . $curr_user_type);
-
-
-
-?>
+?> -->
 
 
 
@@ -36,7 +34,7 @@ console_log('User type is: ' . $curr_user_type);
 
 use App\Controllers\AdminController;
 
-$adController = new AdminController();
+$adminController = new AdminController();
 
 
 echo "<html lang='en'>";
@@ -73,7 +71,7 @@ echo '<div class="q2a-content-content">';
 // -----------------------
 // Content right there
 // -----------------------
-$adController->index();
+$adminController->index();
 
 
 echo '</div>';

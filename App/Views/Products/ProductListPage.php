@@ -3,9 +3,6 @@
 $PATH_ROOT = $GLOBALS['PATH_ROOT'];
 ?>
 <style>
-  /* .home{
-        background-color: red;
-    } */
 </style>
 
 <div class="products">

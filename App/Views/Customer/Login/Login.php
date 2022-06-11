@@ -149,94 +149,94 @@ session_start();
 use App\Models\UserModel;
 
 
-$user_name = '';
-$user_pass = '';
-$error_flag = true;
+// $user_name = '';
+// $user_pass = '';
+// $error_flag = true;
 
-if (isset($_POST['txtUsername'])) {
-  $user_name = $_POST['txtUsername'];
-}
-if (isset($_POST['txtPasword'])) {
-  $user_pass = $_POST['txtPasword'];
-}
-
-
-$userModel = new UserModel();
-$users = $userModel->getAllUser();
-
-//console_log($users);
-foreach ($users as $us) {
-
-  if ($us['user_name'] == $user_name && $us['user_pass'] == $user_pass) {
-
-    $user_type = $us['user_type'];
-    $error_flag = false;
-
-    switch ($user_type) {
-      case 'admin':
-        $msg = 'hi';
+// if (isset($_POST['txtUsername'])) {
+//   $user_name = $_POST['txtUsername'];
+// }
+// if (isset($_POST['txtPasword'])) {
+//   $user_pass = $_POST['txtPasword'];
+// }
 
 
-        $_SESSION['user_name'] = $user_name;
-        $_SESSION['user_type'] = 'admin';
-        $_SESSION['user_id'] = $us['user_id'];
-        $_SESSION['user_email'] = $us['email'];
-        $_SESSION['user_full_info'] = $us;
+// $userModel = new UserModel();
+// $users = $userModel->getAllUser();
+
+// //console_log($users);
+// foreach ($users as $us) {
+
+//   if ($us['user_name'] == $user_name && $us['user_pass'] == $user_pass) {
+
+//     $user_type = $us['user_type'];
+//     $error_flag = false;
+
+//     switch ($user_type) {
+//       case 'admin':
+//         $msg = 'hi';
 
 
-        // echo ("<script>location.href = '" . $PATH_ROOT . "/App/Views/Admin/AdminPage/AdminPage.php';</script>");
-
-        echo ("<script>location.href = '" . $PATH_ADMIN_ROOT . "?action=dashboard';</script>");
-
-        break;
-      case 'user':
-        $_SESSION['user_name'] = $user_name;
-        $_SESSION['user_type'] = 'user';
-        $_SESSION['user_id'] = $us['user_id'];
-        $_SESSION['user_email'] = $us['email'];
-
-        $_SESSION['user_full_info'] = $us;
+//         $_SESSION['user_name'] = $user_name;
+//         $_SESSION['user_type'] = 'admin';
+//         $_SESSION['user_id'] = $us['user_id'];
+//         $_SESSION['user_email'] = $us['email'];
+//         $_SESSION['user_full_info'] = $us;
 
 
-        echo "<script>location.href = '" . $PATH_ROOT . "?action=home'</script>";
+//         // echo ("<script>location.href = '" . $PATH_ROOT . "/App/Views/Admin/AdminPage/AdminPage.php';</script>");
+
+//         echo ("<script>location.href = '" . $PATH_ADMIN_ROOT . "?action=dashboard';</script>");
+
+//         break;
+//       case 'user':
+//         $_SESSION['user_name'] = $user_name;
+//         $_SESSION['user_type'] = 'user';
+//         $_SESSION['user_id'] = $us['user_id'];
+//         $_SESSION['user_email'] = $us['email'];
+
+//         $_SESSION['user_full_info'] = $us;
 
 
-        break;
+//         echo "<script>location.href = '" . $PATH_ROOT . "?action=home'</script>";
 
 
-      default:
-        $_SESSION['user_name'] = $user_name;
-        $_SESSION['user_type'] = 'user';
-        $_SESSION['user_id'] = $us['user_id'];
-        $_SESSION['user_email'] = $us['email'];
-
-        $_SESSION['user_full_info'] = $us;
-
-        echo "<script>location.href = '" . $PATH_ROOT . "/'</script>";
+//         break;
 
 
+//       default:
+//         $_SESSION['user_name'] = $user_name;
+//         $_SESSION['user_type'] = 'user';
+//         $_SESSION['user_id'] = $us['user_id'];
+//         $_SESSION['user_email'] = $us['email'];
 
-        break;
-    }
-  } else {
-  }
-}
+//         $_SESSION['user_full_info'] = $us;
+
+//         echo "<script>location.href = '" . $PATH_ROOT . "/'</script>";
 
 
-if (isset($_POST['txtUsername'])) {
-  if (isset($_POST['txtPasword'])) {
-    if ($error_flag == true) {
-      echo "<script>
-            Swal.fire({
-                icon: 'error',
-                title: 'Sai tên tài khoản hoặc mật khẩu!',
-                showConfirmButton: false,
-                timer: 2700
-              });
-            </script>";
-    }
-  }
-}
+
+//         break;
+//     }
+//   } else {
+//   }
+// }
+
+
+// if (isset($_POST['txtUsername'])) {
+//   if (isset($_POST['txtPasword'])) {
+//     if ($error_flag == true) {
+//       echo "<script>
+//             Swal.fire({
+//                 icon: 'error',
+//                 title: 'Sai tên tài khoản hoặc mật khẩu!',
+//                 showConfirmButton: false,
+//                 timer: 2700
+//               });
+//             </script>";
+//     }
+//   }
+// }
 
 
 

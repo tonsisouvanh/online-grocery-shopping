@@ -63,7 +63,6 @@ switch ($action) {
         require_once "./Router/Cart/CartRouter.php";
         break;
     case 'customer-checkout':
-        console_log('asdhfkjh');
         require_once "./Router/Checkout/CheckoutRouter.php";
         break;
 

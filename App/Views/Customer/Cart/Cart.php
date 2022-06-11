@@ -109,7 +109,9 @@ $PATH_ROOT = $GLOBALS['PATH_ROOT'];
       <p>Phí giao hàng: <span>Miễn phí</span> </p>
     </div>
     <button class="btn cart-checkout-btn">
-      ĐẶT HÀNG
+      <a style="text-decoration: none;color: white;" <?php echo "href='$PATH_ROOT?action=customer-checkout'" ?>>
+        ĐẶT HÀNG
+      </a>
     </button>
     <button class="btn bg-danger cart-deleteCart-btn">
       XÓA GIỎ HÀNG

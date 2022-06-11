@@ -5,8 +5,10 @@ $action = '';
 if (isset($_GET['action'])) {
     $action = $_GET['action'];
     switch ($action) {
+
+
         case 'dashboard':
-            require_once "./Router/Admin/AdminPageRouter.php";
+            require_once "./Router/Merchant/MerchantPageRouter.php";
             break;
 
         case 'merchant-login':

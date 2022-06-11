@@ -16,7 +16,28 @@ class MerchantController
 
   public function index()
   {
-    echo 'index';
+    $view_merchant = new View();
+
+    $data = [1, 2];
+    $view_path = "./App/Views/Merchant/MerchantPage/MerchantPage.php";
+
+
+    // if (isset($_REQUEST['typeManage'])) {
+    //   $typeManage = $_REQUEST['typeManage'];
+
+    //   switch ($typeManage) {
+    //     case   'question-cate':
+    //       return $this->ManageQuestionCategory();
+    //       break;
+
+
+    //     default:
+    //       # code...
+    //       break;
+    //   }
+    // }
+
+    return $view_merchant->render($view_path, $data);
   }
 
   public function renderLoginPage()
@@ -90,5 +111,41 @@ class MerchantController
     $data = [];
     $view_edit_profile = new View();
     return $view_edit_profile->render($view_path, $data);
+  }
+
+
+  public function ManageProduct()
+  {
+
+
+      $view_path = './App/Views/Merchant/ManageProduct/ManageProduct.php';
+
+      // $qqModel = new QuestionQueueModel();
+      // $allQQ = $qqModel->all();
+
+      // Data Note
+      // data[0]: allQQ
+
+      // $data = [$allQQ];
+      $data ='';
+      $manageProductView = new View();
+      return $manageProductView->render($view_path, $data);
+  }
+  public function ManageOrder()
+  {
+
+
+      $view_path = './App/Views/Merchant/ManageOrder/ManageOrder.php';
+
+      // $qqModel = new QuestionQueueModel();
+      // $allQQ = $qqModel->all();
+
+      // Data Note
+      // data[0]: allQQ
+
+      // $data = [$allQQ];
+      $data ='';
+      $manageOrderView = new View();
+      return $manageOrderView->render($view_path, $data);
   }
 }

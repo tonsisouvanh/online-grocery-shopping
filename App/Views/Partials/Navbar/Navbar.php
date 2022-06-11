@@ -95,7 +95,7 @@
                 <a class="nav-link link register-link" <?php echo "href='$PATH_ROOT?action=customer-register'" ?>>Đăng ky</a>
                 <a class="nav-link link nav-link-cart" <?php echo "href='$PATH_ROOT?action=customer-cart'" ?>><i class="fa-solid fa-cart-shopping"></i><span>Giỏ hàng</span>
                 </a>
-                <a class="nav-link link merchant-link" <?php echo "href='$PATH_ROOT?action=user-login'" ?>>Trở thành người bán?</a>
+                <a class="nav-link link merchant-link" <?php echo "href='$PATH_ROOT?action=merchant-register'" ?>>Trở thành người bán?</a>
             </div>
         </div>
 
